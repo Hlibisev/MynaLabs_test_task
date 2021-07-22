@@ -1,0 +1,1 @@
+# MynaLabs_test_task
