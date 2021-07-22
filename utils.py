@@ -14,9 +14,8 @@ def to_numpy(x):
 def make_batch(face_loc, indices, reprocess, numpy_images, device='cuda') -> torch.Tensor:
     """ Takes face location and connect for one torch.Tensor  """
     batch_list = []
-    # распараллелить
+
     for index in indices:
-        # print(index, len(face_loc))
         x0, x1, y1, y0 = face_loc[index][0]
 
         cropped_image = numpy_images[x0: x1, y0: y1]
