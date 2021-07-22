@@ -1,4 +1,5 @@
 import torch
+import torchvision
 from catalyst import dl
 from torch import nn
 from torch.utils.data import DataLoader
@@ -26,6 +27,7 @@ class CustomRunner(dl.SupervisedRunner):
         }
 
 class Predict(nn.Module):
+    """ For accuracy calculating """
     def __init__(self):
         super().__init__()
 
@@ -34,7 +36,11 @@ class Predict(nn.Module):
 
 
 def get_model(path_to_weights=None):
-    """ Model for glasses recognition """
+    """
+        Model for glasses recognition,
+        Resnet with one conv layer, batch norm,
+        one res block, pooling and linear
+    """
     pretrained = True if path_to_weights is None else False
     model = torch.nn.Sequential(
         *(list(resnet18(pretrained=pretrained).children())[:5]),
@@ -57,7 +63,7 @@ def get_split_lenghts(dataset):
     return train_size, test_size, val_size
 
 
-def get_transform():
+def get_transform() -> torchvision.transforms:
     transform = transforms.Compose([
                 transforms.ToTensor(),
                 transforms.Resize((120, 120)),
