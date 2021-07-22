@@ -8,3 +8,11 @@ Task: preparing a dataset with people wearing glasses
 4) Create main function find_pictures_with_glasses which takes path_to_file and return a list of good photos
 5) Apply on original MeGlass dataset
 6) This pipline can be used for other unmarked datasets.
+
+
+
+# Dataset
+https://drive.google.com/drive/u/3/folders/14fBKO8JNZs3eb07uuBHpYmJnIo359WOD
+
+# Colab
+https://colab.research.google.com/drive/1hqjqGXl_zb6FKf_JW_r6J5XYMSmdOWVM?usp=sharing
