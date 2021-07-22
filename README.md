@@ -15,4 +15,4 @@ Task: preparing a dataset with people wearing glasses
 https://drive.google.com/drive/u/3/folders/14fBKO8JNZs3eb07uuBHpYmJnIo359WOD
 
 # Colab
-https://colab.research.google.com/drive/1hqjqGXl_zb6FKf_JW_r6J5XYMSmdOWVM?usp=sharing
+https://colab.research.google.com/drive/199e185g6FNLtsAPWaGamKjVlRa5l0iE7?usp=sharing
